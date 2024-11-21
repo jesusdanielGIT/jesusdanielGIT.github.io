@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div id="game-board"></div>
+      <button id="start">Iniciar</button>
+    </div>
+
+    <div class="stats">
+      <p>Intentos: <span id="attempts">0</span></p>
+      <div class="pairs">
+        <p>
+          <span>Parejas Completas:</span> <span id="completed-pairs">0</span>
+        </p>
+        <p><span>Parejas Restantes:</span> <span id="restant-pairs">0</span></p>
+      </div>
+
+      <p id="timer">00:00</p>
+
+      <button id="restart" disabled>Reiniciar Juego</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

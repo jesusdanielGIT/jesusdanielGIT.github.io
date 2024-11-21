@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+}
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  pointer-events: none;
+
+  margin: auto;
+}
+.content {
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 120px;
+  height: 120px;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 15px;
+}
+.card.active {
+  pointer-events: auto;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+.card.flipped img {
+  display: block;
+  border-radius: 15px;
+}
+.card.matched {
+  cursor: default;
+}
+.stats {
+  margin: 5% 10% 10% 10%;
+  text-align: center;
+  align-self: baseline;
+}
+#timer {
+}
+#start {
+  margin-top: 50px;
+  border-radius: 12px;
+  background-color: #479e47;
+  color: white;
+  padding: 20px 72px 20px;
+  font-size: x-large;
+  font-weight: 800;
+  cursor: pointer;
+}
+.pairs {
+  display: flex;
+  gap: 10%;
+}
+p {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 300;
+}
+#completed-pairs {
+  width: 137px;
+  height: 57px;
+  background-color: rgb(13, 93, 147);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  border-radius: 15px;
+  color: white;
+  border: 2px solid black;
+}
+#restant-pairs {
+  width: 137px;
+  height: 57px;
+  background-color: rgb(13, 93, 147);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  border-radius: 15px;
+  color: white;
+  border: 2px solid black;
+}
+#attempts {
+  width: 120px;
+  height: 57px;
+  background-color: rgb(13, 93, 147);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  border-radius: 15px;
+  color: white;
+  border: 2px solid black;
+}
+#timer {
+  height: 57px;
+  background-color: rgb(230 135 70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  border-radius: 15px;
+  color: white;
+  border: 2px solid black;
+  margin-inline: auto;
+  font-size: 24px;
+
+  width: 220px;
+}
+#restart {
+  margin-top: 50px;
+  border-radius: 12px;
+  background-color: #479e47;
+  color: white;
+  padding: 20px 50px 20px;
+  font-size: x-large;
+  font-weight: 800;
+  cursor: pointer;
+  border: 2px solid black;
+}
